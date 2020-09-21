@@ -149,23 +149,6 @@ class Login extends Component {
                     Or Be Classical
                   </p>
                   <CardBody signup>
-                  <div className="input-field col s12">
-                <input
-                  onChange={this.onChange}
-                  value={this.state.email}
-                  error={errors.email}
-                  id="email"
-                  type="email"
-                  className={classnames("", {
-                    invalid: errors.email || errors.emailnotfound
-                  })}
-                />
-                <label htmlFor="email">Email</label>
-                <span className="red-text">
-                  {errors.email}
-                  {errors.emailnotfound}
-                </span>
-              </div>
                     <CustomInput
                       id="email"
                       formControlProps={{
