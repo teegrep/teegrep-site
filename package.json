@@ -1,0 +1,33 @@
+{
+  "name": "teegrep",
+  "version": "1.0.0",
+  "description": "TeeGrep Site",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "express": "^4.16.4",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.11",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.9.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react-hooks": "^4.1.2"
+  }
+}
